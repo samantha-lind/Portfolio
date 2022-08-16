@@ -45,6 +45,24 @@ h4:hover {
   color: var(--white);
 }
 
+h5 {
+  font-size: 50px;
+  color: var(--dark-green);
+  font-weight: 800;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 button {
   display: inline;
   max-width: 200px;
@@ -97,7 +115,7 @@ button:hover {
   height: auto;
 }
 
-.about-section {
+.skills-section {
   width: 100vw;
   background-color: var(--light-green);
   margin-top: 150px;
@@ -113,4 +131,23 @@ button:hover {
 .logo img {
   width: 120px;
   height: auto;
+}
+
+.portfolio {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0 100px;
+}
+
+.icon {
+  color: var(--dark-green);
+  font-size: 30px !important;
+}
+.icon:hover {
+  color: var(--lime);
 }
