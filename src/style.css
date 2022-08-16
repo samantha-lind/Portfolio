@@ -17,10 +17,12 @@ nav {
 li {
   font-size: 15px;
   padding: 5px 10px;
+  transition: all 200ms ease-in-out;
 }
 
 li:hover {
   background-color: var(--lime);
+  opacity: 1;
 }
 
 body {
@@ -43,6 +45,7 @@ h3 {
   font-size: 50px;
   color: var(--lime);
   font-weight: 800;
+  margin-top: 20px;
 }
 
 h4 {
@@ -73,6 +76,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
+  margin-bottom: 0;
 }
 
 a {
@@ -95,6 +99,11 @@ button {
 button:hover {
   opacity: 0.9;
   scale: 1.05;
+}
+
+nav img {
+  width: 120px;
+  height: auto;
 }
 
 .hero {
@@ -121,7 +130,7 @@ button:hover {
 
 .emphasise {
   font-weight: 500;
-  color: var(--light-green);
+  color: var(--medium-green);
 }
 
 .about {
@@ -136,13 +145,7 @@ button:hover {
 
 .skills-section {
   background-color: var(--light-green);
-  margin-top: 150px;
-  padding: 50px;
-}
-
-nav img {
-  width: 120px;
-  height: auto;
+  padding: 5px;
 }
 
 .portfolio {
@@ -176,6 +179,22 @@ nav img {
   margin-top: 20px;
 }
 
+.my-story {
+  width: 100%;
+  background-color: var(--lime);
+  text-align: center;
+  margin-top: 150px;
+  padding: 80px 0;
+}
+
+.paragraph {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  padding: 60px 0;
+  font-weight: 500;
+}
+
 @media (max-width: 830px) {
   .hero {
     flex-wrap: wrap-reverse;
@@ -192,5 +211,9 @@ nav img {
 
   .skills-section {
     padding: 30px 5px;
+  }
+
+  .paragraph {
+    width: 80%;
   }
 }
