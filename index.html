@@ -24,7 +24,31 @@
   </head>
 
   <body>
-    <div class="logo"><img src="/assets/logo.png" alt="samantha" /></div>
+    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="/assets/logo.png" alt="samantha" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
 
     <!--Hero section-->
     <div class="hero">
@@ -36,7 +60,7 @@
           currently looking for a role with a fast-paced, socially-conscious
           company in the UK or Europe.
         </h2>
-        <button>Check out my work</button>
+        <a href="#portfolio"><button>Check out my work</button></a>
       </div>
 
       <div class="photo">
@@ -49,11 +73,11 @@
     </div>
 
     <!--Skills and technology sexction-->
-    <div class="skills-section">
+    <div class="skills-section" id="about">
       <div class="container about d-grid">
         <div class="row">
           <div class="col-sm-1"></div>
-          <div class="col-sm-4">
+          <div class="col-lg-4">
             <h3>Technologies</h3>
             <h4>GitHub</h4>
             <h4>HTML5</h4>
@@ -74,7 +98,7 @@
             <h4>Google Analytics</h4>
           </div>
           <div class="col-sm-2"></div>
-          <div class="col-sm-5">
+          <div class="col-sm-5 d-none d-lg-block">
             <img
               src="/assets/abstract1.png"
               alt="abstract shapes"
@@ -84,14 +108,14 @@
         </div>
         <div class="row">
           <div class="col-sm-1"></div>
-          <div class="col-sm-5">
+          <div class="col-sm-5 d-none d-lg-block">
             <img
               src="/assets/abstract2.png"
               alt="abstract shapes"
               class="abstract"
             />
           </div>
-          <div class="col-sm-5">
+          <div class="col-lg-5">
             <h3>Soft Skills</h3>
             <h4>Agile</h4>
             <h4>Management</h4>
@@ -112,10 +136,10 @@
       </div>
     </div>
     <!--Portfolio section-->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <h5>Things I've built recently</h5>
-      <div class="projects">
-        <div class="card" style="width: 350px">
+      <div class="projects" >
+        <div class="card">
           <img
             src="/assets/customer-rating.png"
             class="card-img-top"
@@ -136,7 +160,7 @@
           </div>
         </div>
 
-        <div class="card" style="width: 350px">
+        <div class="card">
           <img
             src="/assets/weather-app.png"
             class="card-img-top"
@@ -155,7 +179,7 @@
           </div>
     </div>
 
-     <div class="card" style="width: 350px">
+     <div class="card">
           <img
             src="/assets/portfolio.png"
             class="card-img-top"
@@ -166,13 +190,13 @@
             <p class="card-text">
               This is my first fully-responsive project built using Bootstrap. This website is fully accessible on both mobile and desktop viewports.<br /><br />
               <span class="emphasise">Built with:</span><br />
-              <h4>HTML5</h4> <h4>CSS3</h4> <h4>Bootstrap</h4><br><br>
-              <span class="emphasise">Check it out:</span><br /><br></p>
+              <h4>HTML5</h4> <h4>CSS3</h4> <h4>Bootstrap</h4><br><br><br>
+              <span class="emphasise">Check it out:</span><br /><br>
              <a href="https://github.com/samantha-lind/Portfolio" target="_blank"> <i class="fa-brands fa-github me-5 icon"></i></a>
-              <a href="https://chic-griffin-d267de.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+              <a href="https://chic-griffin-d267de.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square icon"></i></a></p>
           </div>
     </div>
-    
+
     </div>
     <!--Contact section-->
     <script
