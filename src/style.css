@@ -269,11 +269,12 @@ nav img {
     padding-top: 700px;
     padding-bottom: 500px;
     height: 100vh;
+    width: 100vw;
   }
 
   .skills-section {
     padding-top: 100px;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .portfolio {
