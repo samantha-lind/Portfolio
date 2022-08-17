@@ -8,6 +8,7 @@
   --brown: #444213;
 }
 
+/* navigation bar */
 nav {
   position: fixed !important;
   width: 100%;
@@ -26,6 +27,12 @@ li:hover {
   opacity: 1;
 }
 
+nav img {
+  width: 120px;
+  height: auto;
+}
+
+/* main styles*/
 body {
   background-color: var(--white);
 }
@@ -85,10 +92,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: var(--lime);
-}
-
 button {
   display: inline;
   max-width: 200px;
@@ -106,11 +109,12 @@ button:hover {
   scale: 1.05;
 }
 
-nav img {
-  width: 120px;
-  height: auto;
+.emphasise {
+  font-weight: 500;
+  color: var(--medium-green);
 }
 
+/*main page*/
 .hero {
   display: flex;
   justify-content: space-evenly;
@@ -134,11 +138,7 @@ nav img {
   margin-top: 0;
 }
 
-.emphasise {
-  font-weight: 500;
-  color: var(--medium-green);
-}
-
+/*about page*/
 .about {
   display: block;
   margin: 50px auto 0;
@@ -147,100 +147,6 @@ nav img {
 .abstract {
   max-width: 300px;
   height: auto;
-}
-
-.skills-section {
-  background-color: var(--light-green);
-  padding: 20px;
-}
-
-.contact {
-  background-color: var(--light-green);
-  padding: 100px;
-}
-
-.callout {
-  max-width: 700px;
-  background-color: var(--white);
-  padding: 50px 50px;
-  border-radius: 5px;
-  text-align: center;
-  display: block;
-  margin: 100px auto;
-}
-
-.icons {
-  max-width: 700px;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  color: var(--white);
-  font-size: 30px !important;
-}
-
-.c-icon,
-.f-icon {
-  transition: all 200ms ease-in-out;
-}
-
-.c-icon:hover,
-.icon:hover,
-.f-icon:hover {
-  color: var(--lime);
-}
-
-.footer {
-  background-color: #f8f9fa;
-  color: var(--brown);
-  font-size: 12px;
-  text-align: center;
-  height: 100px;
-  bottom: 0;
-  padding: 15px;
-}
-
-.footer a {
-  color: var(--brown);
-  text-decoration: underline;
-}
-
-.footer a:hover {
-  background-color: var(--lime);
-  text-decoration: none;
-}
-
-.portfolio {
-  text-align: center;
-  padding-top: 100px;
-}
-
-.projects {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0 100px;
-  flex-wrap: wrap;
-}
-
-.icon {
-  color: var(--dark-green);
-  font-size: 30px !important;
-}
-
-.f-icon {
-  color: var(--brown);
-  font-size: 30px !important;
-  padding: 10px;
-}
-
-.card:hover {
-  border: 2px solid var(--lime);
-}
-
-.card {
-  transition: all 200ms ease-in-out;
-  min-width: 320px;
-  max-width: 360px;
-  margin-top: 20px;
 }
 
 .my-story {
@@ -263,18 +169,134 @@ nav img {
   font-weight: 500;
 }
 
+.about a:hover {
+  background-color: var(--lime);
+}
+
+/*skills section*/
+.skills-section {
+  background-color: var(--light-green);
+  padding: 20px;
+}
+
+/*contact section*/
+.contact {
+  background-color: var(--light-green);
+  padding: 100px;
+}
+
+.callout {
+  max-width: 700px;
+  background-color: var(--white);
+  padding: 50px 50px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  margin: 100px auto;
+}
+
+/* icons */
+.icons {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  color: var(--white);
+  font-size: 30px !important;
+}
+
+.c-icon,
+.f-icon {
+  transition: all 200ms ease-in-out;
+}
+
+.c-icon:hover,
+.icon:hover,
+.f-icon:hover {
+  color: var(--lime);
+}
+
+.icon {
+  color: var(--dark-green);
+  font-size: 30px !important;
+}
+
+.f-icon {
+  color: var(--brown);
+  font-size: 30px !important;
+  padding: 10px;
+}
+
+/* footer */
+.footer {
+  background-color: #f8f9fa;
+  color: var(--brown);
+  font-size: 12px;
+  text-align: center;
+  height: 100px;
+  bottom: 0;
+  padding: 15px;
+}
+
+.footer a {
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  background-color: var(--lime);
+  text-decoration: none;
+}
+
+/* portfolio section */
+.portfolio {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  border: 2px solid var(--lime);
+}
+
+.card {
+  transition: all 200ms ease-in-out;
+  min-width: 320px;
+  max-width: 360px;
+  margin-top: 20px;
+}
+
+/* responsive adjustments */
 @media (max-width: 830px) {
+  body {
+    max-width: 100vw !important;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
   .hero {
     flex-wrap: wrap-reverse;
     padding-top: 700px;
     padding-bottom: 500px;
     height: 100vh;
-    width: 100vw;
   }
 
   .skills-section {
     padding-top: 100px;
     min-height: 100vh;
+    max-width: 100vw;
+  }
+
+  .about {
+    max-width: 100vw;
   }
 
   .portfolio {
