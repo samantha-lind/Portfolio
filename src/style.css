@@ -5,6 +5,7 @@
   --medium-green: #289672;
   --light-green: #29bb89;
   --lime: #e6dd3b;
+  --brown: #444213;
 }
 
 nav {
@@ -112,6 +113,7 @@ nav img {
   align-content: center;
   padding-top: 50px;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .introduction {
@@ -135,7 +137,7 @@ nav img {
 
 .about {
   display: block;
-  margin: 50px auto;
+  margin: 50px auto 0;
 }
 
 .abstract {
@@ -172,12 +174,35 @@ nav img {
   font-size: 30px !important;
 }
 
-.c-icon {
+.c-icon,
+.f-icon {
   transition: all 200ms ease-in-out;
 }
 
-.c-icon:hover {
+.c-icon:hover,
+.icon:hover,
+.f-icon:hover {
   color: var(--lime);
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: var(--brown);
+  font-size: 12px;
+  text-align: center;
+  height: 100px;
+  bottom: 0;
+  padding: 15px;
+}
+
+.footer a {
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  background-color: var(--lime);
+  text-decoration: none;
 }
 
 .portfolio {
@@ -196,8 +221,11 @@ nav img {
   color: var(--dark-green);
   font-size: 30px !important;
 }
-.icon:hover {
-  color: var(--lime);
+
+.f-icon {
+  color: var(--brown);
+  font-size: 30px !important;
+  padding: 10px;
 }
 
 .card:hover {
@@ -215,7 +243,7 @@ nav img {
   width: 100%;
   background-color: var(--white);
   text-align: center;
-  padding: 80px 0;
+  padding: 80px 0 0px;
 }
 
 .paragraph {
@@ -229,7 +257,28 @@ nav img {
 @media (max-width: 830px) {
   .hero {
     flex-wrap: wrap-reverse;
-    padding-top: 150px;
+    padding-top: 700px;
+    padding-bottom: 500px;
+    height: 100vh;
+  }
+
+  .skills-section {
+    padding-top: 100px;
+    height: 100vh;
+  }
+
+  .portfolio {
+    padding-top: 200px;
+  }
+
+  .contact {
+    width: 100%;
+    height: 100vh;
+    padding: 250px 0 100px 0;
+  }
+
+  .callout {
+    width: 400px;
   }
 
   .introduction {
@@ -240,11 +289,11 @@ nav img {
     font-size: 60px;
   }
 
-  .skills-section {
-    padding: 30px 5px;
-  }
-
   .paragraph {
     width: 80%;
+  }
+
+  .my-story {
+    padding: 200px 40px;
   }
 }
