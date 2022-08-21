@@ -269,7 +269,7 @@ button:hover {
   transition: all 200ms ease-in-out;
   min-width: 320px;
   max-width: 360px;
-  margin-top: 20px;
+  margin: 20px 10px;
 }
 
 /* responsive adjustments */
