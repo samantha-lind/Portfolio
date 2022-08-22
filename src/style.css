@@ -262,12 +262,7 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.card:hover {
-  border: 2px solid var(--lime);
-}
-
 .card {
-  transition: all 200ms ease-in-out;
   min-width: 320px;
   max-width: 360px;
   margin: 20px 10px;
