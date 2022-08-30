@@ -22,11 +22,6 @@ li {
   transition: all 200ms ease-in-out;
 }
 
-li:hover {
-  background-color: var(--lime);
-  opacity: 1;
-}
-
 nav img {
   width: 120px;
   height: auto;
@@ -177,7 +172,6 @@ button:hover {
   border: 1px solid var(--dark-green);
   padding: 8px 14px;
   margin: 5px;
-  transition: all 200ms ease-in-out;
   border-radius: 4px;
 }
 
