@@ -8,133 +8,39 @@
     <meta name="description" content="Samantha Lind's portfolio" />
     <link rel="icon" type="image/x-icon" href="/assets/s.png" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
-          ><img src="./assets/logo.png" alt="samantha"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="index.html"
-                title="Introduction"
-                ><strong>Home</strong></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html" title="About me">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html" title="Skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html" title="Portfolio"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html" title="Contact me"
-                >Contact</a
-              >
-            </li>
-          </ul>
+    <div class="text-ticker__wrapper">
+      <div class="text-ticker__mask">
+        <div class="text-ticker__carousel">
+          <div class="text-ticker__text">
+            <h2>samantha lind.</h2>
+          </div>
+          <div class="text-ticker__text">
+            <h2>frontend engineer.</h2>
+          </div>
+          <div class="text-ticker__text">
+            <h2>startup specialist.</h2>
+          </div>
+          <div class="text-ticker__text">
+            <h2>growth leader.</h2>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <!--Hero section-->
-    <div class="hero">
-      <div class="introduction">
-        <h1>Frontend Developer.</h1>
-        <h2>
-          I'm a software engineer with a passion for building and designing
-          <em class="emphasise">exceptional user experiences</em>. I'm currently
-          looking for a role with a fast-paced, socially-conscious company in
-          the UK or Europe.
-        </h2>
-        <a href="portfolio.html" title="Portfolio"
-          ><button>Check out my work</button></a
-        >
-      </div>
-
-      <div class="photo">
-        <img
-          src="./assets/profile.png"
-          alt="profile picture"
-          class="img-fluid profile"
-        />
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer-text">
-        This is an
-        <a
-          href="https://github.com/samantha-lind/Portfolio"
-          title="Portfolio"
-          class="footerlink"
-          >open-source project</a
-        >
-        coded by Samantha Lind
-      </div>
-      <a
-        href="https://www.linkedin.com/in/sj-lind/"
-        target="_blank"
-        title="LinkedIn"
-        ><i class="fa-brands fa-linkedin-in f-icon"></i
-      ></a>
-      <a href="mailto:samanthalind@hotmail.com" target="_blank" title="Email"
-        ><i class="fa-solid fa-envelope f-icon"></i
-      ></a>
-      <a
-        href="https://www.instagram.com/ohelodie/"
-        target="_blank"
-        title="Instagram"
-      >
-        <i class="fa-brands fa-instagram f-icon"></i
-      ></a>
-      <a href="https://github.com/samantha-lind" target="_blank" title="GitHub"
-        ><i class="fa-brands fa-github f-icon"></i
-      ></a>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/019689e63f.js"
-      crossorigin="anonymous"
-    ></script>
+    <div class="text__wrapper">
+      <p class="text__text">
+        I'm a frontend engineer with a passion for building and designing exceptional user experiences. 
+        <br /><br />
+        Currently building websites for <a href="https://www.easol.com" target="_blank" rel="noopener noreferrer">Easol</a>.
+      </p>
+    </div>
   </body>
 </html>
